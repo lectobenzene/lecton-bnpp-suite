@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="1.6" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="dom4j-1.6.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/MultiLangExcelParser/libs/dom4j-1.6.1.jar!/"/>
+	</lib>
+	<lib name="poi-3.9-20121203.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/MultiLangExcelParser/libs/poi-3.9-20121203.jar!/"/>
+	</lib>
+	<lib name="poi-ooxml-3.9-20121203.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/MultiLangExcelParser/libs/poi-ooxml-3.9-20121203.jar!/"/>
+	</lib>
+	<lib name="poi-ooxml-schemas-3.9-20121203.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/MultiLangExcelParser/libs/poi-ooxml-schemas-3.9-20121203.jar!/"/>
+	</lib>
+	<lib name="stax-api-1.0.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/MultiLangExcelParser/libs/stax-api-1.0.1.jar!/"/>
+	</lib>
+	<lib name="xmlbeans-2.3.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/MultiLangExcelParser/libs/xmlbeans-2.3.0.jar!/"/>
+	</lib>
+	<lib name="jxl-2.6.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/MultiLangExcelParser/libs/jxl-2.6.jar!/"/>
+	</lib>
+</component>

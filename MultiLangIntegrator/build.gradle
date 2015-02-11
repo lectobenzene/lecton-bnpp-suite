@@ -1,0 +1,20 @@
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+
+	// sourceCompatibility = 1.6
+	
+	repositories {
+	   mavenCentral()
+	}
+
+	build.doLast {
+		println "Hello End"
+		copyLibJarToProject.execute()
+	}
+}
+
+task copyLibJarToProject(type: Copy){
+	from 'MultiLangIntegratorLibrary/build/libs'
+	into 'libs'
+}
