@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: URLEncryption
+Bundle-SymbolicName: com.mobility.bnpp.URLEncryption;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mobility.bnpp.urlencryption.Activator
+Bundle-Vendor: Saravana
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Eclipse-AutoStart: true
+Bundle-ClassPath: lib/robovm-rt-0.0.2.jar,
+ .

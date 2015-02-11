@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Multilangintegrator
+Bundle-SymbolicName: com.mobility.bnpp.multilangintegrator;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mobility.bnpp.multilangintegrator.Activator
+Bundle-Vendor: MOBILITY
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ libs/groovy-all-2.2.1.jar,
+ libs/MultiLangParserGroovy.jar

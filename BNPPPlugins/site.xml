@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.mobility.bnpp.AntBuildMultiLang_1.0.0.201401171539.jar" id="com.mobility.bnpp.AntBuildMultiLang" version="1.0.0.201401171539">
+      <category name="com.mobility.bnpp.bnppplugins"/>
+   </feature>
+   <feature url="features/com.mobility.bnpp.ResourceSwapper_1.0.0.201401171539.jar" id="com.mobility.bnpp.ResourceSwapper" version="1.0.0.201401171539">
+      <category name="com.mobility.bnpp.bnppplugins"/>
+   </feature>
+   <feature url="features/com.mobility.bnpp.SonarReportGeneration_1.0.0.201401171539.jar" id="com.mobility.bnpp.SonarReportGeneration" version="1.0.0.201401171539">
+      <category name="com.mobility.bnpp.bnppplugins"/>
+   </feature>
+   <feature url="features/com.mobility.bnpp.URLEncryptor_1.0.0.201401171539.jar" id="com.mobility.bnpp.URLEncryptor" version="1.0.0.201401171539" os="linux,macosx">
+      <category name="com.mobility.bnpp.bnppplugins"/>
+   </feature>
+   <feature url="features/com.mobility.bnpp.ShowInFolder_1.0.0.201401241440.jar" id="com.mobility.bnpp.ShowInFolder" version="1.0.0.201401241440">
+      <category name="com.mobility.bnpp.bnppplugins"/>
+   </feature>
+   <category-def name="com.mobility.bnpp.bnppplugins" label="BNPP"/>
+</site>

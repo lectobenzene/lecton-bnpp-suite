@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="JavaSE-1.6">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="groovy-all-2.2.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.mobility.bnpp.multilangintegrator/libs/groovy-all-2.2.1.jar!/"/>
+	</lib>
+	<lib name="MultiLangParserGroovy.jar" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/MultiLangIntegratorLibrary/src/main/groovy"/>
+		<relative-module-src project-related="file://$PROJECT_DIR$/com.mobility.bnpp.multilangintegrator/MultiLangIntegratorLibrary/src/main/groovy"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.mobility.bnpp.multilangintegrator/libs/MultiLangParserGroovy.jar!/"/>
+		<relative-module-javadoc project-related="file://$PROJECT_DIR$/com.mobility.bnpp.multilangintegrator/MultiLangIntegratorLibrary/build/docs/groovydoc"/>
+	</lib>
+</component>

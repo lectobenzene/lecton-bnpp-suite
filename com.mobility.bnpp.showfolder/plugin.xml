@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer?before=additions">
+       
+            <command
+                  commandId="com.mobility.bnpp.showfolder.command"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+               </visibleWhen>
+            </command>
+
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="com.mobility.bnpp.showfolder.category"
+            name="ShowFolder">
+      </category>
+      <command
+            id="com.mobility.bnpp.showfolder.command"
+            name="Show in System">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="plugincode.ShowInSystem"
+            commandId="com.mobility.bnpp.showfolder.command">
+         <enabledWhen>
+            <with
+                  variable="selection">
+               <count
+                     value="1">
+               </count>
+            </with>
+         </enabledWhen>
+      </handler>
+   </extension>
+
+</plugin>

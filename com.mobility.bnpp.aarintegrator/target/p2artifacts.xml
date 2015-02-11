@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='com.mobility.bnpp.aarintegrator' version='1.0.0.201402071205'>
+    <properties size='5'>
+      <property name='artifact.size' value='5903790'/>
+      <property name='download.size' value='5903790'/>
+      <property name='maven-groupId' value='com.mobility.bnpp.eclipseplugins'/>
+      <property name='maven-artifactId' value='com.mobility.bnpp.aarintegrator'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+  </artifact>
+</artifacts>

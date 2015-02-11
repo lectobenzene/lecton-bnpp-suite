@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="com.mobility.bnpp.something.contribution1">
+         <menu
+               label="New Submenu"
+               path="additions"
+               id="com.mobility.bnpp.something.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="New Action"
+               class="com.mobility.bnpp.something.popup.actions.NewAction"
+               menubarPath="com.mobility.bnpp.something.menu1/group1"
+               enablesFor="1"
+               id="com.mobility.bnpp.something.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

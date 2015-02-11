@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="BNPP">
+            <command
+                  commandId="com.mobility.bnpp.multilangintegrator.command"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="com.mobility.bnpp.multilangintegrator.category"
+            name="BNPPCategory">
+      </category>
+      <command
+            categoryId="com.mobility.bnpp.multilangintegrator.category"
+            id="com.mobility.bnpp.multilangintegrator.command"
+            name="New Multi Lang">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.mobility.bnpp.multilangintegrator.plugincode.MultiLangIntegrator"
+            commandId="com.mobility.bnpp.multilangintegrator.command">
+      </handler>
+   </extension>
+
+</plugin>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="Java SE 7 [1.7.0_45]">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="jxl-2.6.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.mobility.bnpp/lib/jxl-2.6.jar!/"/>
+	</lib>
+	<lib name="ant-launcher.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.mobility.bnpp/lib/ant-launcher.jar!/"/>
+	</lib>
+	<lib name="ant.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.mobility.bnpp/lib/ant.jar!/"/>
+	</lib>
+</component>

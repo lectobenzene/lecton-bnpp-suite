@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.jdt.core
+Eclipse-AutoStart: true
+Bundle-Vendor: MOBILITY
+Bundle-ClassPath: libs/AARDecomposerGroovy.jar,.,libs/groovy-all-2.2.1
+ .jar
+Bundle-Version: 1.0.0.201402071205
+Bundle-Name: Aarintegrator
+Bundle-Activator: com.mobility.bnpp.aarintegrator.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.mobility.bnpp.aarintegrator;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

@@ -1,0 +1,12 @@
+include "MultiLangIntegratorLibrary"
+
+rootProject.children.each{
+	switch(it.name){
+		case 'MultiLangIntegratorLibrary':
+			it.name = 'MultiLangParserGroovy'
+			break
+		default:
+			println 'Problem Occured'
+			break
+	}
+}

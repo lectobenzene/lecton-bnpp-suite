@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Resourcechanger
+Bundle-SymbolicName: com.mobility.bnpp.resourcechanger;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mobility.bnpp.resourcechanger.Activator
+Bundle-Vendor: Saravana
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.jdt,
+ org.eclipse.jdt.core,
+ org.eclipse.ui.console
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Eclipse-AutoStart: true

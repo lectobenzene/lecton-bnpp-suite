@@ -1,0 +1,19 @@
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+
+	sourceCompatibility = 1.6
+	
+	repositories {
+	   mavenCentral()
+	}
+
+	build.doLast {
+		copyLibJarToProject.execute()
+	}
+}
+
+task copyLibJarToProject(type: Copy){
+	from 'AARDecomposerGroovy/build/libs'
+	into 'libs'
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="com.mobility.bnpp.menu.BNPP"
+               label="BNPP">
+            <command
+                  commandId="com.mobility.bnpp.urlencryption"
+                  id="com.mobility.bnpp.menu.urlencryption"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <with
+                        variable="selection">
+                     <iterate
+                           ifEmpty="false"
+                           operator="or">
+                        <and>
+                           <or>
+                              <instanceof
+                                    value="org.eclipse.jdt.core.IJavaProject">
+                              </instanceof>
+                           </or>
+                        </and>
+                     </iterate>
+                  </with>
+               </visibleWhen>
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            description="BNPP Commands"
+            id="com.mobility.bnpp.command.category1"
+            name="BNPP">
+      </category>
+      <command
+            categoryId="com.mobility.bnpp.command.category1"
+            description="Encrypts and Decrypts URLs"
+            id="com.mobility.bnpp.urlencryption"
+            name="URL Encryption">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.mobility.bnpp.urlencryption.plugincode.URLEncryption"
+            commandId="com.mobility.bnpp.urlencryption">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <menu
+               id="com.mobility.bnpp.popupmenu.BNPP"
+               label="BNPP">
+            <command
+                  commandId="com.mobility.bnpp.urlencryption"
+                  id="com.mobility.bnpp.popupmenu.urlencryption"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <with
+                        variable="selection">
+                     <iterate
+                           ifEmpty="false"
+                           operator="or">
+                        <and>
+                           <or>
+                              <instanceof
+                                    value="org.eclipse.jdt.core.IJavaProject">
+                              </instanceof>
+                           </or>
+                        </and>
+                     </iterate>
+                  </with>
+               </visibleWhen>
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

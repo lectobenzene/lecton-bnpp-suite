@@ -1,0 +1,12 @@
+include "AARDecomposerGroovy"
+
+rootProject.children.each{
+	switch(it.name){
+		case 'AARDecomposerGroovy':
+			it.name = 'AARDecomposerGroovy'
+			break
+		default:
+			println 'Problem Occured'
+			break
+	}
+}
